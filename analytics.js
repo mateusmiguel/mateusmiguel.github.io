@@ -1,0 +1,1 @@
+gtag('set', {'currency': 'USD'});
