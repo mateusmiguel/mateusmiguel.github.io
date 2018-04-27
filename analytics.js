@@ -1,8 +1,6 @@
-gtag('set', {
-    'currency': 'USD'
-});
 
-gtag('event', 'conversion', {
-    'value': 1.0,
-    'currency': 'USD'
+$('#page').on('click', function () {
+    gtag('event', 'enviar-tarefa', {
+        'method': 'quiz',
+    });
 });
