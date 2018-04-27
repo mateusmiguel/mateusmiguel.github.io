@@ -4,3 +4,17 @@ $('#page').on('click', function () {
         'method': 'quiz',
     });
 });
+
+// gtag('event', 'click'>, {
+//     'event_category': 'home',
+//     'event_label': 'btn-home',
+//     'value': <value>
+//   });
+
+
+  function trackClick(site, page) {
+    gtag('event', 'click', {
+        'event_category': site,
+        'event_label': page
+    });
+};
