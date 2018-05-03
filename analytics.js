@@ -5,7 +5,7 @@ function trackClick(site, page) {
     });
 };
 
-gtag('event', 'conversion', {
+gtag('event', 'dinheiro', {
   'value': 1.0,
-  'currency': 'USD'
+  'currency': 'R$'
 });
