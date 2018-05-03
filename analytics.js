@@ -5,7 +5,9 @@ function trackClick(site, page) {
     });
 };
 
-gtag('event', 'dinheiro', {
-  'value': 1.0,
-  'currency': 'R$'
+gtag('event', 'Usuario', {
+  'nome': 'Mateus',
+  'curso': 'ead',
+  'cidade': 'Campinas',
+  'cpf':'40894414801'
 });
