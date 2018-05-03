@@ -4,3 +4,8 @@ function trackClick(site, page) {
         'event_label': page
     });
 };
+
+gtag('event', 'conversion', {
+  'value': 1.0,
+  'currency': 'USD'
+});
