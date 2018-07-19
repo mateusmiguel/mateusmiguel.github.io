@@ -1,0 +1,52 @@
+body {
+    display: table;
+    width: 100%;
+}
+
+/* Header */
+
+#kroton-header-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+#kroton-header-wrapper #top-bar-area {
+    width: 100%;
+    height: 30px;
+    background: #42494e;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1031;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#kroton-header-wrapper #kroton-header {
+    height: 60px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(204, 204, 204, .34901960784314);
+}
+
+/* Sidebar */
+
+#side-menu {
+    background: #434a4f;
+    display: table-cell;
+    width: 90px;
+}
+
+.card-group {
+    margin-top: 95px;
+    padding: 0 5px;
+}
+
+@media (max-width: 575px) {
+    #side-menu {
+        display: none;
+    }
+}

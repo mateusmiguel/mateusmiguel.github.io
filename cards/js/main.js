@@ -1,26 +1,28 @@
-var cardsResize = function () {
-    function cardCalc(el) {
+function cards() {
 
-        var lenght = []
+    //Make clicable
+    let card = '.card-group .card'
 
-        $(el).each(function () {
-            $(this).attr('style', 'height: ')
-            lenght.push($(this).height())
-            lenght.sort()
+    $(card).each(function () {
+        $(this).click(function () {
+            window.location = $(this).find('a').attr('href');
+            return false;
         })
-        
-        $(el).each(function () {
-            $(this).attr('style', 'height: ' + enght.pop() + 'px')
+    })
+
+
+    // Invert title and img order
+    if ($(window).width() > 560) {
+        $(card).each(function () {
+            $(this).find('.card-title').insertBefore($(this).find('.card-sub'))
+        })
+    } else {
+        $(card).each(function () {
+            $(this).find('.card-title').insertBefore($(this).find('.card-img'))
         })
     }
 
-    cardCalc('#page-site-index #block-region-h-lg-e-course .catalog-card-title-top')
-    cardCalc('#page-site-index .card-body .titleHeightCard')
-}
-
-
-
-var cards = function () {
+    //Recalc card sizes
     function cardCalc(el) {
 
         var lenght = []
@@ -32,15 +34,24 @@ var cards = function () {
         })
 
         var height = lenght.pop()
-        
+
         $(el).each(function () {
             $(this).attr('style', 'height: ' + height + 'px')
         })
     }
 
-    cardCalc('.card-group .card .card-title')
-    cardCalc('.card-group .card .card-sub')
+    cardCalc(card + ' .card-title')
+    cardCalc(card + ' .card-sub')
 }
 
-window.onload = cards
-window.onresize = cards
+var resizeCard
+$(window).resize(function () {
+    clearTimeout(resizeCard)
+    resizeCard = setTimeout(function () {
+        cards()
+        console.log($(window).width())
+    }, 250)
+})
+
+
+window.onload = cards;
