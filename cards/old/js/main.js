@@ -10,16 +10,17 @@ function cards() {
         })
     })
 
+
     // Invert title and img order
-    // if ($(window).width() > 560) {
-    //     $(card).each(function () {
-    //         $(this).find('.card-title').insertBefore($(this).find('.card-sub'))
-    //     })
-    // } else {
-    //     $(card).each(function () {
-    //         $(this).find('.card-title').insertBefore($(this).find('.card-img'))
-    //     })
-    // }
+    if ($(window).width() > 560) {
+        $(card).each(function () {
+            $(this).find('.card-title').insertBefore($(this).find('.card-sub'))
+        })
+    } else {
+        $(card).each(function () {
+            $(this).find('.card-title').insertBefore($(this).find('.card-img'))
+        })
+    }
 
     //Recalc card sizes
     function cardCalc(el) {
@@ -51,5 +52,6 @@ $(window).resize(function () {
         console.log($(window).width())
     }, 250)
 })
+
 
 window.onload = cards;
