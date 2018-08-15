@@ -1,62 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CSS Flex</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Cards KLS</title>
 </head>
 
 <body>
-    <main>
-        <!-- Cards -->
-
-        <div class="card-group">
-            <div class="card-wrap">
-                <div class="card" tabindex="1">
-                    <div class="card-img">
-                        <img src="img/2.jpg" alt="">
-                    </div>
-                    <div class="card-container">
-                        <label class="card-dots">
-                            <span></span>
-                        </label>
-                        <div class="card-header">
-                            <h3 class="card-subtitle">Disciplinas Interativas KLS 2.0</h3>
-                            <h2 class="card-title">Homem, Cultura e Sociedade</h2>
-                        </div>
-                        <div class="card-info">
-                            <div class="card-info__prof">
-                                <b>Professores:</b> Paulo Rogerio Martins</div>
-                            <div class="card-info__eq">
-                                <b>Disciplina Equivalente:</b> Administração e Economia para Engenheiro</div>
-                            <a href="#" tabindex="-1" class="card-info__link">Acesse aqui</a>
-                        </div>
-                    </div>
-                    <!-- <div class="card-content">
-                        
-                        
-                        <div class="card-info">
-                            <div class="card-info__prof">
-                                <b>Professores:</b> Paulo Rogerio Martins</div>
-                            <div class="card-info__eq">
-                                <b>Disciplina Equivalente:</b> Administração e Economia para Engenheiro</div>
-                            <a href="index.html" tabindex="-1" class="card-info__link">Acesse aqui</a>
-                        </div>
-                    </div> -->
+    <!-- Card Group-->
+    <div class="card-group">
+        <!-- Card -->
+        <div class="card">
+            <div class="card-image">
+                <img src="img/2.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                <h2 class="card-content-title">Homem, Cultura e Sociedade</h2>
+                <label class="card-content-dots" title="Clique para mais informações">
+                    <span></span>
+                </label>
+            </div>
+            <div class="card-action">
+                <a href="#">
+                    <span>Acesse o curso</span>
+                </a>
+            </div>
+            <!-- More info (reveal) -->
+            <div class="card-reveal">
+                <i class="card-reveal-close"></i>
+                <!-- gera com a js ou já monta assim com php -->
+                <div class="card-image-background" style="background-image: url('img/2.jpg')"></div>
+                <div class="card-content card-reveal-content">
+                    <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                    <h2 class="card-content-title">Homem, Cultura e Sociedade</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-
-
         </div>
-    </main>
+        <!-- Card -->
+        <div class="card">
+            <div class="card-image">
+                <img src="img/1.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                <h2 class="card-content-title">Teoria da Computação</h2>
+                <label class="card-content-dots" title="Clique para mais informações">
+                    <span></span>
+                </label>
+            </div>
+            <div class="card-action">
+                <a href="#">
+                    <span>Acesse o curso</span>
+                </a>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+            <div class="card-image">
+                <img src="img/3.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                <h2 class="card-content-title">Soluções Web Baseadas em Software Livre</h2>
+                <label class="card-content-dots" title="Clique para mais informações">
+                    <span></span>
+                </label>
+            </div>
+            <div class="card-action">
+                <a href="#">
+                    <span>Acesse o curso</span>
+                </a>
+            </div>
+            <!-- More info (reveal) -->
+            <div class="card-reveal">
+                <i class="card-reveal-close"></i>
+                <!-- gera com a js ou já monta assim com php -->
+                <div class="card-image-background" style="background-image: url('img/3.jpg')"></div>
+                <div class="card-content card-reveal-content">
+                    <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                    <h2 class="card-content-title">Soluções Web Baseadas em Software Livre</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+            <div class="card-image">
+                <img src="img/4.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                <h2 class="card-content-title">Gestão da Produção</h2>
+                <label class="card-content-dots" title="Clique para mais informações">
+                    <span></span>
+                </label>
+            </div>
+            <div class="card-action">
+                <a href="#">
+                    <span>Acesse o curso</span>
+                </a>
+            </div>
+            <!-- More info (reveal) -->
+            <div class="card-reveal">
+                <i class="card-reveal-close"></i>
+                <!-- gera com a js ou já monta assim com php -->
+                <div class="card-image-background" style="background-image: url('img/4.jpg')"></div>
+                <div class="card-content card-reveal-content">
+                    <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                    <h2 class="card-content-title">Gestão da Produção</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+            <div class="card-image">
+                <img src="img/5.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                <h2 class="card-content-title">PHP com Zend Framework</h2>
+                <label class="card-content-dots" title="Clique para mais informações">
+                    <span></span>
+                </label>
+            </div>
+            <div class="card-action">
+                <a href="#">
+                    <span>Acesse o curso</span>
+                </a>
+            </div>
+            <!-- More info (reveal) -->
+            <div class="card-reveal">
+                <i class="card-reveal-close"></i>
+                <!-- gera com a js ou já monta assim com php -->
+                <div class="card-image-background"></div>
+                <div class="card-content card-reveal-content"></div>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+            <div class="card-image">
+                <img src="img/6.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                <h2 class="card-content-title">Civlizações pré-colombianas</h2>
+                <label class="card-content-dots" title="Clique para mais informações">
+                    <span></span>
+                </label>
+            </div>
+            <div class="card-action">
+                <a href="#">
+                    <span>Acesse o curso</span>
+                </a>
+            </div>
+            <!-- More info (reveal) -->
+            <div class="card-reveal">
+                <i class="card-reveal-close"></i>
+                <!-- gera com a js ou já monta assim com php -->
+                <div class="card-image-background" style="background-image: url('img/6.jpg')"></div>
+                <div class="card-content card-reveal-content">
+                    <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                    <h2 class="card-content-title">Civlizações pré-colombianas</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+            <div class="card-image">
+                <img src="img/8.jpg">
+            </div>
+            <div class="card-content">
+                <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                <h2 class="card-content-title">Fundamentos da Música Clássica</h2>
+                <label class="card-content-dots" title="Clique para mais informações">
+                    <span></span>
+                </label>
+            </div>
+            <div class="card-action">
+                <a href="#">
+                    <span>Acesse o curso</span>
+                </a>
+            </div>
+            <!-- More info (reveal) -->
+            <div class="card-reveal">
+                <i class="card-reveal-close"></i>
+                <!-- gera com a js ou já monta assim com php -->
+                <div class="card-image-background" style="background-image: url('img/8.jpg')"></div>
+                <div class="card-content card-reveal-content">
+                    <h3 class="card-content-category">Disciplinas Interativas KLS 2.0</h3>
+                    <h2 class="card-content-title">Fundamentos da Música Clássica</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/card.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
