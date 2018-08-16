@@ -51,17 +51,6 @@ body {
   vertical-align: middle;
 }
 
-.card-image-background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-size: cover;
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
-  opacity: .15;
-  z-index: -1;
-}
-
 .card-content {
   position: relative;
   padding: 15px;
@@ -206,34 +195,6 @@ body {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
-.card-reveal .card-content {
-  width: 100%;
-  height: calc(100% - 46px);
-  overflow: auto;
-  font-size: 11px;
-}
-
-.card-reveal .card-content-title::after {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 2px;
-  background: #fff;
-  margin-top: 5px;
-}
-
-.card-reveal .card-content-category {
-  color: #bbbbbb;
-}
-
-.card-reveal .card-action {
-  width: 100%;
-  position: fixed;
-  left: 0;
-  margin-left: 0;
-  display: none;
-}
-
 .card-reveal-close {
   position: absolute;
   top: 15px;
@@ -269,5 +230,93 @@ body {
 .card-reveal-close:hover {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.card-reveal-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  opacity: .15;
+  z-index: -1;
+}
+
+.card-reveal-content {
+  width: 100%;
+  height: calc(100% - 46px);
+  overflow: auto;
+  font-size: 11px;
+  padding: 15px;
+}
+
+.card-reveal-content-title {
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  margin: 0 0 15px 0;
+}
+
+.card-reveal-content-title::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  margin-top: 5px;
+}
+
+.card-reveal-content-category {
+  font-size: 11px;
+  color: #bbbbbb;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+.card-reveal-content-sub {
+  margin-bottom: 10px;
+}
+
+.card-reveal-content-sub i {
+  font-size: 14px;
+}
+
+.card-reveal-content-sub b {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card-reveal-content-sub p {
+  margin: 2px;
+}
+
+.card-reveal-content-sub-percent p {
+  display: block;
+  width: 100%;
+}
+
+.card-reveal-content-sub-percent p span {
+  float: right;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: -2px;
+}
+
+.card-reveal-content-sub-progressbar {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.card-reveal-content-sub-progressbar > div {
+  background-color: #03a9f4;
+  width: 60%;
+  height: 10px;
 }
 /*# sourceMappingURL=main.css.map */
