@@ -16,6 +16,7 @@ body {
     width: 100%;
     height: 30px;
     background: #42494e;
+    color: #fff;
     top: 0;
     left: 0;
     right: 0;
@@ -24,6 +25,14 @@ body {
     padding: 0;
     position: relative;
 }
+#kroton-header-wrapper #top-bar-area a {
+    color: #fff;
+    font-size: 11px;
+    padding: 0px 10px;
+    vertical-align: bottom;
+    
+}
+
 
 #kroton-header-wrapper #kroton-header {
     height: 60px;
@@ -48,7 +57,7 @@ body {
     width: 90px;
 }
 
-.card-group {
+.card-group, .forum {
     margin-top: 95px;
     padding: 0 5px;
 }
@@ -57,4 +66,9 @@ body {
     #side-menu {
         display: none;
     }
+}
+
+/*geral */
+.userpicture {
+    border-radius: 50%;
 }

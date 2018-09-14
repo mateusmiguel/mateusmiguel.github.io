@@ -1,0 +1,34 @@
+.forum-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 6px;
+  padding: 10px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.forum-item img {
+  width: 35px;
+  height: 35px;
+}
+
+.forum-item-content {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+  font-size: 11px;
+  line-height: 15px;
+  color: #333333;
+  font-family: "Open Sans" a;
+  font-family-font-size: 13px;
+  font-family-color: #006FDF;
+  font-family-text-decoration: none;
+  font-family-line-height: 16px;
+}
+/*# sourceMappingURL=forum.css.map */
