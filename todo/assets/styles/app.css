@@ -168,7 +168,7 @@ a {
   margin-top: auto;
 }
 
-@media (min-width: 340px) {    
+@media (min-width: 1081px) {    
   .todo {
     height: 75vh;
     width: 320px;
